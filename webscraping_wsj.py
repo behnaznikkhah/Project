@@ -49,6 +49,4 @@ for y in year:
                 
                 df=pd.DataFrame({"headlines":headlines,"date":date})
                 
-                    
-print(headlines)
 df.to_csv("output.csv")
