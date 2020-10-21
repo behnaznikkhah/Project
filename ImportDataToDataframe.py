@@ -33,25 +33,27 @@ def import_content(file_dir):
     data_Germany['Country'] = 'Germany'
     data_Germany.rename(columns = {'Vol.':'Volume'}, inplace = True)
     
-    data_USA = pd.read_csv(filepath_list[4],thousands=',')
-    data_USA['Country'] = 'USA'
-    data_USA.rename(columns = {'Vol.':'Volume'}, inplace = True)
+
     
-    data_Britain = pd.read_csv(filepath_list[5],thousands=',')
+    data_Britain = pd.read_csv(filepath_list[4],thousands=',')
     data_Britain['Country'] = 'Britain'
     data_Britain.rename(columns = {'Vol.':'Volume'}, inplace = True)
     
-    data_HongKong = pd.read_csv(filepath_list[6],thousands=',')
+    data_HongKong = pd.read_csv(filepath_list[5],thousands=',')
     data_HongKong['Country'] = 'HongKong'
     data_HongKong.rename(columns = {'Vol.':'Volume'}, inplace = True)
     
-    data_Jakarta = pd.read_csv(filepath_list[7],thousands=',')
+    data_Jakarta = pd.read_csv(filepath_list[6],thousands=',')
     data_Jakarta['Country'] = 'Indonesia'
     data_Jakarta.rename(columns = {'Vol.':'Volume'}, inplace = True)
     
-    data_Korea = pd.read_csv(filepath_list[8],thousands=',')
+    data_Korea = pd.read_csv(filepath_list[7],thousands=',')
     data_Korea['Country'] = 'Korea'
     data_Korea.rename(columns = {'Vol.':'Volume'}, inplace = True)
+    
+    data_USA = pd.read_csv(filepath_list[8],thousands=',')
+    data_USA['Country'] = 'USA'
+    data_USA.rename(columns = {'Vol.':'Volume'}, inplace = True)
     
     data_India = pd.read_csv(filepath_list[9],thousands=',')
     data_India['Country'] = 'India'
